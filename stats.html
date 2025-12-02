@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stats Zone01 - gcouvri</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="dark">
+  <header class="header">
+    <div class="container">
+      <div class="nav-wrapper">
+        <a href="index.html" class="logo">gcouvri</a>
+        <nav class="nav-menu">
+          <a href="index.html" class="nav-link">Accueil</a>
+          <a href="about.html" class="nav-link">À propos</a>
+          <a href="projects.html" class="nav-link">Projets</a>
+          <a href="skills.html" class="nav-link">Compétences</a>
+          <a href="stats.html" class="nav-link active">Stats Zone01</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <h1>Mes Stats Zone01</h1>
+        <p class="subtitle">Progression académique et compétences validées</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-card">
+            <h3>XP Total</h3>
+            <p id="total-xp" class="stat-large">-</p>
+          </div>
+          <div class="stat-card">
+            <h3>Niveau</h3>
+            <p id="level" class="stat-large">-</p>
+          </div>
+          <div class="stat-card">
+            <h3>Skills</h3>
+            <p id="skills-count" class="stat-large">-</p>
+          </div>
+        </div>
+
+        <div class="chart-container">
+          <h2>Progression XP (30 derniers jours)</h2>
+          <canvas id="xp-chart"></canvas>
+        </div>
+
+        <div class="skills-section">
+          <h2>Skills Validées</h2>
+          <div id="zone01-skills" class="skills-list">
+            <div class="loading">Chargement des skills...</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 gcouvri. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>loadStatsPage();</script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>gcouvri - Développeur Full Stack</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark">
+  <!-- Navigation Header -->
+  <header class="header">
+    <div class="container">
+      <div class="nav-wrapper">
+        <a href="index.html" class="logo">gcouvri</a>
+        <nav class="nav-menu">
+          <a href="index.html" class="nav-link active">Accueil</a>
+          <a href="about.html" class="nav-link">À propos</a>
+          <a href="projects.html" class="nav-link">Projets</a>
+          <a href="skills.html" class="nav-link">Compétences</a>
+          <a href="stats.html" class="nav-link">Stats Zone01</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <img id="avatar" src="/placeholder.svg" alt="gcouvri" class="avatar">
+          <h1 id="name">Bienvenue</h1>
+          <p id="bio" class="subtitle"></p>
+          <div class="stats-row">
+            <div class="stat-item">
+              <span class="stat-label">Repos</span>
+              <span id="repos-count" class="stat-value">-</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-label">Followers</span>
+              <span id="followers-count" class="stat-value">-</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-label">Contributions</span>
+              <span id="contributions-count" class="stat-value">-</span>
+            </div>
+          </div>
+          <div class="hero-buttons">
+            <a href="https://github.com/nosserb" target="_blank" class="btn btn-primary">GitHub</a>
+            <a href="contact.html" class="btn btn-secondary">Me Contacter</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Repositories Section -->
+    <section class="section">
+      <div class="container">
+        <h2>Mes Meilleurs Projets</h2>
+        <div id="repos-grid" class="repos-grid">
+          <div class="loading">Chargement des projets...</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 gcouvri. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

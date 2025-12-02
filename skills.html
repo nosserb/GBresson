@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compétences - gcouvri</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark">
+  <header class="header">
+    <div class="container">
+      <div class="nav-wrapper">
+        <a href="index.html" class="logo">gcouvri</a>
+        <nav class="nav-menu">
+          <a href="index.html" class="nav-link">Accueil</a>
+          <a href="about.html" class="nav-link">À propos</a>
+          <a href="projects.html" class="nav-link">Projets</a>
+          <a href="skills.html" class="nav-link active">Compétences</a>
+          <a href="stats.html" class="nav-link">Stats Zone01</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <h1>Mes Compétences</h1>
+        <p class="subtitle">Technologies que je maîtrise</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div id="skills-container" class="skills-container">
+          <div class="loading">Chargement des compétences...</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 gcouvri. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>loadSkillsPage();</script>
+</body>
+</html>

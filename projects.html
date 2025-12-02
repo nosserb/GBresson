@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projets - gcouvri</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark">
+  <header class="header">
+    <div class="container">
+      <div class="nav-wrapper">
+        <a href="index.html" class="logo">gcouvri</a>
+        <nav class="nav-menu">
+          <a href="index.html" class="nav-link">Accueil</a>
+          <a href="about.html" class="nav-link">À propos</a>
+          <a href="projects.html" class="nav-link active">Projets</a>
+          <a href="skills.html" class="nav-link">Compétences</a>
+          <a href="stats.html" class="nav-link">Stats Zone01</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <h1>Mes Projets</h1>
+        <p class="subtitle">Découvrez tous mes projets GitHub</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="filter-bar">
+          <input type="text" id="search-repos" placeholder="Rechercher un projet..." class="search-input">
+          <select id="language-filter" class="language-filter">
+            <option value="">Tous les langages</option>
+          </select>
+        </div>
+        <div id="all-repos-grid" class="repos-grid">
+          <div class="loading">Chargement des projets...</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 gcouvri. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>loadProjectsPage();</script>
+</body>
+</html>
